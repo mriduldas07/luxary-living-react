@@ -12,7 +12,7 @@ const Navbar = () => {
         <li><Link to='/admin'>Admin</Link></li>
     </>
     return (
-        <div className="bg-#F7F7F7 mt-[35px]">
+        <div className="bg-#F7F7F7">
             <div className="navbar px-[40px] pr-45">
                 <div className="navbar-start">
                     <div className="dropdown">
