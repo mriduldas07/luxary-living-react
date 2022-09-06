@@ -4,7 +4,7 @@ module.exports = {
     {
       mytheme: {
 
-        "primary": "#282861",
+        "primary": "#251D58",
 
         "secondary": "#D926A9",
 
@@ -21,6 +21,9 @@ module.exports = {
         "warning": "#FBBD23",
 
         "error": "#F87272",
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
       },
     },
   ],
