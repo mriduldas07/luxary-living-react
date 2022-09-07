@@ -1,11 +1,12 @@
 
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import { publicRoute } from './Routes/publicRoute';
 
 function App() {
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-8xl mx-auto'>
       <Navbar></Navbar>
       <Routes>
         {
@@ -15,6 +16,7 @@ function App() {
           ></Route>)
         }
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
