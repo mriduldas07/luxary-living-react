@@ -1,4 +1,5 @@
 
+import { Toaster } from 'react-hot-toast';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -17,6 +18,12 @@ function App() {
         }
       </Routes>
       <Footer></Footer>
+      <Toaster
+        toastOptions={{
+          className: 'font-medium',
+          duration: 5000,
+        }}
+      ></Toaster>
     </div>
   );
 }

@@ -1,9 +1,24 @@
 import React from 'react';
 import navLogo from '../Icon/navIcon.png';
-import { Link } from 'react-router-dom'
+import { HiOutlineLogout } from 'react-icons/hi';
+import { Link, useNavigate } from 'react-router-dom'
 import CommonBtn from './CommonBtn';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init';
+import Loading from './Loading';
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
+    const [user, loading] = useAuthState(auth);
+    const navigate = useNavigate();
+
+    if (loading) {
+        <Loading></Loading>
+    }
+    const handleLogOut = () => {
+        signOut(auth);
+        navigate('/login')
+    }
     const navItem = <>
         <li><Link to='/home'>Home</Link></li>
         <li><Link to='/about'>About us</Link></li>
@@ -33,11 +48,19 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end lg:mr-7">
-                    <Link to='/login'>
-                        <CommonBtn>
-                            <span className='px-10'>Login</span>
-                        </CommonBtn>
-                    </Link>
+                    {
+                        user ? <> <span className='dropdown dropdown-end font-bold capitalize mr-4'>{user?.displayName}</span>
+                            <div className='tooltip tooltip-warning tooltip-bottom' data-tip="Log Out">
+                                <HiOutlineLogout className='cursor-pointer' size={25} onClick={handleLogOut}></HiOutlineLogout>
+                            </div>
+                        </> :
+                            <Link to='/login'>
+                                <CommonBtn>
+                                    <span className='px-10'>Login</span>
+                                </CommonBtn>
+                            </Link>
+                    }
+
                 </div>
             </div>
         </div>
