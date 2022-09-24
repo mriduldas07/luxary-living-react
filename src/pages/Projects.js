@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <div>
             <h1 className='font-bold text-2xl text-center my-5 font-poppins'>All Projects Of Luxury Living</h1>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 px-8 g py-3ap-3">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 px-8 gap-5 py-3">
                 {
                     projects?.map(project => <Project
                         key={project._id}
