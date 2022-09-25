@@ -12,10 +12,10 @@ const HomeProjects = () => {
             .then(data => setHomeProjects(data))
     }, [homeProjects])
     return (
-        <div className='my-[90px]'>
+        <div className='mt-[90px]'>
             <h6 className='text-center mb-[3px]'>Projects</h6>
             <h2 className='text-center font-bold text-4xl leading-[50px]'>Discover the latest Interior Design <br /> available today</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 mx-14">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 mx-14 gap-4">
                 {
                     homeProjects.map(project => <Project
                         key={project._id}

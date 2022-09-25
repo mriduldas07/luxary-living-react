@@ -4,7 +4,7 @@ import BannerImg from '../Image/pierre-chatel-innocenti-AlSlE8IAjZo-unsplash 1.p
 
 const Banner = () => {
     return (
-        <div className='bg-#F7F7F7'>
+        <div className='bg-[#F7F7F7]'>
             <div className="grid grid-cols-1 lg:grid-cols-2 px-[40px]">
                 <div>
                     <h1 className='text-#1F1632 font-bold text-4xl lg:text-6xl font-poppins lg:leading-[80px] tracking-[0.15%] lg:mt-[90px] mt-[30px] '>We Build <br /> Your Dream</h1>
@@ -17,7 +17,7 @@ const Banner = () => {
                     </CommonBtn>
                 </div>
                 <div className="mt-[56px]">
-                    <img className='w-[571px] lg:h-[502px]' src={BannerImg} alt="" />
+                    <img className='w-[571px] mb-4 lg:h-[502px]' src={BannerImg} alt="" />
                 </div>
             </div>
         </div>
