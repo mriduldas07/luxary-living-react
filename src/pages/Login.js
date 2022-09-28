@@ -18,7 +18,6 @@ const Login = () => {
     if (gUser?.providerId === 'google.com') {
         navigate('/home')
         toast.success('Login with google is successfully done')
-        console.log(gUser);
     }
     return (
         <div className="hero h-screen bg-base-200">

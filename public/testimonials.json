@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Nash Patrik",
+        "workPosition": "CEO, Manpol",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat ",
+        "img": "https://i.ibb.co/HndT02R/Ellipse-90.png"
+    },
+    {
+        "name": "Miriam Barron",
+        "workPosition": "CEO, Roukten",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat ",
+        "img": "https://i.ibb.co/Jj2TnGh/Ellipse-91.png"
+    },
+    {
+        "name": "Bria Malone",
+        "workPosition": "CEO, Facebook",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat ",
+        "img": "https://i.ibb.co/tZM3bBK/Ellipse-92.png"
+    }
+]
